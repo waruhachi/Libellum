@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+        <dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>cellClass</key>
+            <string>GcTwitterCell</string>
+            <key>accountLabel</key>
+            <string>Lacertosus</string>
+            <key>account</key>
+            <string>LacertosusDeus</string>
+            <key>URL</key>
+            <string>https://avatars2.githubusercontent.com/u/14306024?v=4</string>
+        </dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>cellClass</key>
+			<string>LibellumSegmentTableWithInputCell</string>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>noteSize</string>
+			<key>label</key>
+			<string>Size</string>
+			<key>default</key>
+			<string>121</string>
+			<key>validTitles</key>
+			<array>
+				<string>Tiny</string>
+				<string>Compact</string>
+				<string>Medium</string>
+				<string>Large</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>71</integer>
+				<integer>121</integer>
+				<integer>171</integer>
+				<integer>221</integer>
+			</array>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTableCell</string>
+			<key>cellClass</key>
+			<string>LibellumStylePickerCell</string>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>blurStyle</string>
+			<key>default</key>
+			<string>adaptive</string>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+			<key>options</key>
+			<array>
+				<dict>
+					<key>image</key>
+					<string>images/lightimage</string>
+					<key>appearanceOption</key>
+					<string>platters</string>
+					<key>label</key>
+					<string>Light Mode</string>
+				</dict>
+
+				<dict>
+					<key>image</key>
+					<string>images/darkimage</string>
+					<key>appearanceOption</key>
+					<string>plattersDark</string>
+					<key>label</key>
+					<string>Dark Mode</string>
+				</dict>
+
+				<dict>
+					<key>image</key>
+					<string>images/colorizedimage</string>
+					<key>appearanceOption</key>
+					<string>colorized</string>
+					<key>label</key>
+					<string>Colorized</string>
+				</dict>
+
+				<dict>
+					<key>image</key>
+					<string>images/adaptiveimage</string>
+					<key>appearanceOption</key>
+					<string>adaptive</string>
+					<key>label</key>
+					<string>Adaptive</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<string>15</string>
+			<key>min</key>
+			<string>0</string>
+			<key>max</key>
+			<string>30</string>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>cornerRadius</string>
+			<key>isSegmented</key>
+			<true/>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+			<key>label</key>
+			<string>Corner Radius</string>
+			<key>cellClass</key>
+			<string>LibellumLabeledSliderCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>detail</key>
+			<string>LibellumColorsListController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Color Options</string>
+			<key>icon</key>
+			<string>icons/colors.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>detail</key>
+			<string>LibellumGeneralListController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>General Options</string>
+			<key>icon</key>
+			<string>icons/general.png</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Security &amp; Backup</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>LibellumSwitchWithInfoCell</string>
+			<key>infoTitle</key>
+			<string></string>
+			<key>infoMessage</key>
+			<string>This option will prevent viewing or editing notes until the device is unlocked with Face ID, Touch ID, or the passcode.</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>requireAuthentication</string>
+			<key>label</key>
+			<string>Require Authentication</string>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>LibellumSwitchWithInfoCell</string>
+			<key>infoTitle</key>
+			<string></string>
+			<key>infoMessage</key>
+			<string>This option will backup your notes once per respring.</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>noteBackup</string>
+			<key>label</key>
+			<string>Enabled Note Backup</string>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>manageBackup:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+    	<string>HBSpinnerTableCell</string>
+			<key>label</key>
+			<string>Manage Backup</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Note Visibility Gestures</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>hideGesture</string>
+			<key>label</key>
+			<string>Enable Gestures</string>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+			<key>id</key>
+			<string>ENABLE_GESTURES</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>detail</key>
+			<string>LibellumGesturesListController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Gesture Options</string>
+			<key>icon</key>
+			<string>icons/gestures.png</string>
+			<key>id</key>
+			<string>GESTURE_OPTIONS</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Support</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>detail</key>
+			<string>LibellumCreditsListController</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Credits</string>
+			<key>icon</key>
+			<string>icons/credits.png</string>
+			<key>height</key>
+			<integer>57</integer>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Github</string>
+			<key>subtitle</key>
+			<string>Find the source code here!</string>
+			<key>icon</key>
+			<string>icons/github.png</string>
+			<key>url</key>
+			<string>https://github.com/LacertosusRepo/Open-Source-Tweaks</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>PayPal</string>
+			<key>subtitle</key>
+			<string>Feed my Steam sale addiction!</string>
+			<key>icon</key>
+			<string>icons/paypal.png</string>
+			<key>url</key>
+			<string>https://paypal.me/Lacertosus</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>Libellum
+LacertosusDeus
+waruhachi</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string></string>
+</dict>
+</plist>
