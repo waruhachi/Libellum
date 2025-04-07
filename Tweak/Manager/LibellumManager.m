@@ -492,14 +492,16 @@
                 AudioServicesPlaySystemSound([self.preferences integerForKey:@"feedbackStyle"]);
             }
 
+			CGFloat yOffset = [self.preferences floatForKey:@"yOffset"];
+
             if(self.pageController.view.hidden) {
                 self.pageController.view.hidden = NO;
                 [self forceLockScreenStackViewLayout];
 
-                self.pageController.view.transform = CGAffineTransformMakeScale(0.5, 0.5);
+                self.pageController.view.transform = CGAffineTransformTranslate(CGAffineTransformMakeScale(0.5, 0.5), 0, yOffset);
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    self.pageController.view.transform = CGAffineTransformMakeScale(1, 1);
+                    self.pageController.view.transform = CGAffineTransformTranslate(CGAffineTransformMakeScale(1, 1), 0, yOffset);
                     self.pageController.view.alpha = 1;
                     } completion:nil];
                 });
@@ -510,7 +512,7 @@
 
             if(!self.pageController.view.hidden) {
                 [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    self.pageController.view.transform = CGAffineTransformMakeScale(0.5, 0.5);
+                    self.pageController.view.transform = CGAffineTransformTranslate(CGAffineTransformMakeScale(0.5, 0.5), 0, yOffset);
                     self.pageController.view.alpha = 0;
                 } completion:^(BOOL finished) {
                     self.pageController.view.hidden = YES;
