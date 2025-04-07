@@ -156,6 +156,7 @@
         self.noteSize = [self.preferences integerForKey:@"noteSize"];
         self.blurStyle = [self.preferences objectForKey:@"blurStyle"];
         self.cornerRadius = [self.preferences integerForKey:@"cornerRadius"];
+        self.yOffset = [self.preferences integerForKey:@"yOffset"];
 
         self.requireAuthentication = [self.preferences boolForKey:@"requireAuthentication"];
 

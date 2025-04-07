@@ -53,6 +53,10 @@ static HBPreferences *preferences;
             [[LibellumManager sharedManager] createPages];
             [stackView insertArrangedSubview:[LibellumManager sharedManager].pageController.view atIndex:0];
 
+            CGFloat yOffset = [preferences floatForKey:@"yOffset"];
+            UIView *pageView = [LibellumManager sharedManager].pageController.view;
+            pageView.transform = CGAffineTransformTranslate(pageView.transform, 0, yOffset);
+
             [((UIScrollView *)scrollView).panGestureRecognizer requireGestureRecognizerToFail:[LibellumManager sharedManager].swipeGesture];
 
             if([preferences boolForKey:@"isHidden"] && [preferences boolForKey:@"hideGesture"]) {
@@ -264,6 +268,7 @@ static HBPreferences *preferences;
         @"noteSize" : @121,
         @"blurStyle" : @"adaptive",
         @"cornerRadius" : @15,
+        @"yOffset" : @0,
         @"noteBackup" : @NO,
         @"requireAuthentication" : @NO,
         @"hideGesture" : @NO,

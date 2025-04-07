@@ -37,6 +37,7 @@
 
     @property (nonatomic, assign) CGFloat borderWidth;
     @property (nonatomic, assign) CGFloat cornerRadius;
+    @property (nonatomic, assign) CGFloat yOffset;
     @property (nonatomic, assign) NSInteger noteSize;
     @property (nonatomic, assign) NSInteger textAlignment;
     @property (nonatomic, assign) BOOL useKalmTintColor;

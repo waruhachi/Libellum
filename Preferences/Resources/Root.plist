@@ -124,6 +124,28 @@
 			<key>cellClass</key>
 			<string>LibellumLabeledSliderCell</string>
 		</dict>
+        <dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<string>0</string>
+			<key>min</key>
+			<string>-500</string>
+			<key>max</key>
+			<string>500</string>
+			<key>defaults</key>
+			<string>com.lacertosusrepo.libellumpreferences</string>
+			<key>key</key>
+			<string>yOffset</string>
+			<key>isSegmented</key>
+			<false/>
+			<key>PostNotification</key>
+			<string>com.lacertosusrepo.libellumpreferences.reload</string>
+			<key>label</key>
+			<string>Y Offset</string>
+			<key>cellClass</key>
+			<string>LibellumLabeledSliderCell</string>
+		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSLinkCell</string>
